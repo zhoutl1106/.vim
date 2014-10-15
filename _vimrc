@@ -24,7 +24,6 @@ set wrap                  " 设置自动换行
 set linebreak
 set nobackup
 set tabstop=4                " 设置Tab键的宽度        [等同的空格个数]
-set wrap
 syntax enable                " 打开语法高亮
 syntax on                    " 开启文件类型侦测
 filetype indent on           " 针对不同的文件类型采用不同的缩进格式
