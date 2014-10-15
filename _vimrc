@@ -20,10 +20,11 @@ set laststatus=2             " 开启状态栏信息
 set cmdheight=2              " 命令行的高度，默认为1，这里设为2
 set showmatch               " 显示括号配对情况
 set cursorline              " 突出显示当前行
-set nowrap                  " 设置不自动换行
+set wrap                  " 设置自动换行
+set linebreak
 set nobackup
 set tabstop=4                " 设置Tab键的宽度        [等同的空格个数]
-
+set wrap
 syntax enable                " 打开语法高亮
 syntax on                    " 开启文件类型侦测
 filetype indent on           " 针对不同的文件类型采用不同的缩进格式
@@ -31,7 +32,7 @@ filetype plugin on           " 针对不同的文件类型加载对应的插件
 filetype plugin indent on    " 启用自动补全
 
 " 每行超过80个的字符用下划线标示
-au BufRead,BufNewFile *.s,*.c,*.cpp,*.h,*.cl,*.rb,*.sql,*.sh,*.vim,*.js,*.css,*.html 2match Underlined /.\%81v/
+au BufRead,BufNewFile *.s,*.c,*.cpp,*.h,*.cl,*.rb,*.sql,*.sh,*.vim,*.js,*.css,*.html 2match Underlined /.\%82v/
 
 
 " 设置编码
